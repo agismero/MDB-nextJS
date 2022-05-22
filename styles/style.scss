@@ -1,0 +1,34 @@
+@import url("https://unpkg.com/mvp.css");
+
+$color: #000000bb;
+
+body{
+    margin: 25px 100px;
+}
+
+a{
+    text-decoration: none;
+    color:$color;
+    font-weight: 800;
+}
+
+.movieGrid{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    article{
+        cursor: pointer;
+        flex: 1 1 200px;
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+        }
+        p{
+            text-align: center;
+        }
+        border: 1px solid $color;
+    }
+}
